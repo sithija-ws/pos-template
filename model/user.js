@@ -7,7 +7,7 @@ const userSchema = mongoose.Schema({
         lowercase: true,
         trim: true
     },
-    userName : {
+    username : {
         type: String,
         required: true
     },
@@ -26,5 +26,5 @@ const userSchema = mongoose.Schema({
     }
 })
 
-const User = new mongoose.model(userSchema);
+const User = new mongoose.model("User",userSchema);
 export default User;
